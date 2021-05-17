@@ -7,7 +7,21 @@ body {
     height: 100%;
     flex-direction: column
 }
-
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .page-content {
     flex: 1 0 auto
 }
@@ -447,11 +461,11 @@ div.qaLink a {
 .btn-default {
     border-color: #009691;
     background-color: #009691;
-    color: #fff
+    color: #000
 }
 
 .btn-default:hover,.btn-default:focus,.btn-default.focus {
-    color: #fff;
+    color: #000;
     background-color: #009691;
     border-color: #009691;
     outline: none;
@@ -856,7 +870,7 @@ body.home-page .header-navigation {
 
 .free-shipping-text {
     background: #009691;
-    color: #fff;
+    color: #000;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -1573,8 +1587,7 @@ ul.extrapages li a i {
     height: 38px;
     font-weight: 400;
     border-color: #009691!important;
-    background-color: #009691!important;
-    font-size: 0;
+    background-color: #009691!important;    
     color: #fff!important;
     border-radius: 0
 }
@@ -1584,11 +1597,7 @@ ul.extrapages li a i {
 }
 
 @media(min-width: 768px) {
-    .mailinglist-submit {
-        font-size:0
-    }
-
-    .mailinglist-submit i {
+.mailinglist-submit i {
         display: block
     }
 }
